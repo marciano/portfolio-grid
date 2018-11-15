@@ -109,6 +109,72 @@
       </div>
     </div>
 
+    <!-- Resume -->
+    <div id="resume" class="collapse">
+      <div class="card card-body bg-dark text-white py-5">
+        <h2>My Resume</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Atque, tenetur.
+        </p>
+      </div>
+      <div class="card card-body py-5">
+        <h3>Where Have I Worked?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Non voluptas odio omnis natus repudiandae laboriosam.</p>
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">DevMasters</h4>
+                <p class="card-text">Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. Nesciunt, et?</p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Full-Stack Developer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Phone: (555)555-5555
+                </p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">2015-2018</h6>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">123 Designs</h4>
+                <p class="card-text">Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. Nesciunt, et?</p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Front-End Developer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Phone: (555)555-5555
+                </p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">2013-2015</h6>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Web Design Pros</h4>
+                <p class="card-text">Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. Nesciunt, et?</p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Web Designer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Phone: (555)555-5555
+                </p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">2012-2013</h6>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer id="main-footer" class="p-5 bg-dark text-white">
       <div class="row">
@@ -128,8 +194,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script>
-    // Get current year for copyright
-    $('#year').text(new Date().getFullYear());
+    $('.port-item').click(() => {
+      $('.collapse').collapse('hide');
+    });
   </script>
 </body>
 </html>
